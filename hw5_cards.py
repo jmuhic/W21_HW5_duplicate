@@ -53,7 +53,7 @@ class Deck:
         all 52 cards in a standard deck
     '''
 
-    def __init__(self): 
+    def __init__(self):
 
         self.cards = []
         for suit in range(4):
