@@ -155,9 +155,9 @@ class TestCard(unittest.TestCase):
         q6_end_count = len(q6.cards)
 
         # Testing that end count is one fewer than the inital
-        self.assertEqual(q6_init_count, (q6_end_count + 1))
+        self.assertEqual((q6_init_count - 1), q6_end_count)
 
-        return q6_init_count, (q6_end_count + 1)
+        return (q6_init_count - 1), q6_end_count
 
 
     def test_q7(self):
